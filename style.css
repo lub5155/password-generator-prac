@@ -45,3 +45,17 @@ span{
     color:#3498DB ;
     text-decoration: underline #2C3E50;
 }
+#cpy{
+    color: #1c2834;
+    padding-top: 5px;
+    background-color:#3498DB;
+    border: none;
+    border-radius: 10px;
+}
+.pas{
+    display: flex;
+}
+#cp{
+    color: #363e74;
+    font-weight:500;
+}

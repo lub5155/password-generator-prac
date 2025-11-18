@@ -3,9 +3,8 @@ let sml="abcdefghijklmnopqrstuvwxyz"
 let dgt="0123456789"
 let spl="!@#$%^&*()_+-={}[];:<>,.?/"
 let length = 14;
-
+ let pass=[]
 function generate(){
-    let pass=[]
     let y
     for(let i=0;i<14;i++){
         y=Math.floor(Math.random()*4)
@@ -24,4 +23,12 @@ function generate(){
     }
      pass= pass.join("");
     document.getElementById("inp").value=pass
+}
+function cpy(){
+    navigator.clipboard.writeText(document.getElementById("inp").value);
+    let u=document.getElementById("cp")
+    u.style.display="block"
+    setTimeout(() => {
+    u.style.display = "none";
+    }, 1000);
 }

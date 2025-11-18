@@ -12,9 +12,14 @@
             Random Password <span>Generator</span>
         </h1>
         <div class="pas">
-            <input type="text"  id="inp"><br>
-            <button id="btn" onclick="generate()">Generate</button>
+            <input type="text"  id="inp">
+            <div id="cpyb">
+            <button id="cpy" onclick="cpy()"><img src="content_copy_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></button>
+            </div>
+            <br>
         </div>
+          <button id="btn" onclick="generate()">Generate</button><br>
+          <p id="cp" style="display:none;">copied to clipboard</p>
     </div>
 <script src="index.js"></script>
 </body>

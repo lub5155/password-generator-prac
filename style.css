@@ -24,6 +24,8 @@ body{
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: 600;
+    color: #1c2834;
 
 }
 #inp:focus{

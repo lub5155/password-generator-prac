@@ -3,6 +3,7 @@ let sml="abcdefghijklmnopqrstuvwxyz"
 let dgt="0123456789"
 let spl="!@#$%^&*()_+-={}[];:<>,.?/"
 let length = 14;
+
 function generate(){
     let pass=[]
     let y
@@ -21,5 +22,6 @@ function generate(){
             pass.push(spl[Math.floor(Math.random()*spl.length)])
         }
     }
-    console.log(pass)
+     pass= pass.join("");
+    document.getElementById("inp").value=pass
 }

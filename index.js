@@ -3,8 +3,9 @@ let sml="abcdefghijklmnopqrstuvwxyz"
 let dgt="0123456789"
 let spl="!@#$%^&*()_+-={}[];:<>,.?/"
 let length = 14;
- let pass=[]
+ let pass
 function generate(){
+    pass=[]
     let y
     for(let i=0;i<14;i++){
         y=Math.floor(Math.random()*4)

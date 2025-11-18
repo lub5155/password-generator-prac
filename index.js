@@ -25,10 +25,14 @@ function generate(){
     document.getElementById("inp").value=pass
 }
 function cpy(){
+    if(document.getElementById("inp").value){
     navigator.clipboard.writeText(document.getElementById("inp").value);
     let u=document.getElementById("cp")
     u.style.display="block"
     setTimeout(() => {
     u.style.display = "none";
     }, 1000);
+    }else{
+        window.alert("Generate Password first!!")
+    }
 }
